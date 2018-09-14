@@ -18,4 +18,14 @@ class FractionTest {
     void testDecimal() {
         assertEquals(0.25, fraction.decimal(), 10e-3);
     }
+
+    @Test
+    void testGetNumerator() {
+        assertEquals(1, fraction.getNumerator());
+    }
+
+    @Test
+    void testGetDenominator() {
+        assertEquals(4, fraction.getDenominator());
+    }
 }
